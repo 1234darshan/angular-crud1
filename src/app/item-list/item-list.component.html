@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 style="background-color: #333333; color: white; padding: 10px;">Item List</h2>
+    <div class="list-group">
+        <div class="list-group-item" *ngFor="let item of items">
+            <img [src]="item.avatar" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+            <h4>{{ item.first_name }} {{ item.last_name }}</h4>
+            <p>Email: {{ item.email }}</p>
+            <p>Gender: {{ item.gender }}</p>
+            <p>Domain: {{ item.domain }}</p>
+            <p>Available: {{ item.available ? 'Yes' : 'No' }}</p>
+            <button class="btn btn-primary" (click)="editItem(item)">Edit</button>
+            <button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button>
+        </div>
+    </div>
+</div>
+
+<app-edit-item *ngIf="selectedItem" [selectedItem]="selectedItem" (saveChanges)="saveChanges()"></app-edit-item>
+<app-add-item (addItem)="addItem($event)"></app-add-item>

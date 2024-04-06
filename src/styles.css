@@ -1,0 +1,213 @@
+.container {
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.list-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.list-group-item {
+  width: calc(25% - 20px); /* Adjust as needed */
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.list-group-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.list-group-item h4,
+.list-group-item p {
+  margin: 5px 0;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid #dc3545;
+}
+
+/* Media queries for tablet */
+@media (max-width: 768px) {
+  .list-group-item {
+      width: calc(50% - 20px); /* Adjust as needed */
+  }
+}
+
+/* Media queries for mobile */
+@media (max-width: 576px) {
+  .list-group-item {
+      width: calc(100% - 20px); /* Adjust as needed */
+  }
+}
+
+
+.container1 {
+    margin: 20px;
+    max-width: 400px; /* Adjust width as needed */
+    margin: auto; /* Center the form */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select.form-control {
+    width: 100%;
+}
+
+.btn-primary1 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container1 {
+        max-width: 300px; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 {
+        max-width: 250px; /* Adjust width for even smaller screens */
+    }
+}
+
+.container2 {
+  margin: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.form-group2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control2 {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select.form-control2 {
+  width: 100%;
+}
+
+.btn-primary2 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container2 {
+      max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container2 {
+      max-width: 250px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .form-control,
+  .form-control2 {
+      width: calc(100% - 16px); /* Adjust as needed */
+  }
+}
+
+/* Media queries for tablet */
+@media (max-width: 992px) {
+  .form-control,
+  .form-control2{
+      width: calc(100% - 16px); /* Adjust as needed */
+  }
+}
+
+/* Media queries for mobile */
+@media (max-width: 576px) {
+  .form-control,
+  .form-control2{
+      width: calc(100% - 16px); /* Adjust as needed */
+  }
+}
+.form-control3{
+  width: 104%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-control3 {
+    width: calc(100% - 0px); /* Adjust width to accommodate padding */
+    padding: 6px; /* Adjust padding */
+  }
+}

@@ -1,0 +1,70 @@
+.container {
+    margin-top: 20px;
+  }
+  /* Global styles */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Item List styles */
+.card {
+  width: calc(25% - 20px); /* Calculate width for 4 cards per column with margins */
+  margin: 0 10px 20px; /* Add margins between cards */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-content {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.card-info {
+  margin-bottom: 5px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-button {
+  margin-left: 5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 100%;
+  }
+}
